@@ -230,3 +230,6 @@ input {
     background-color: var(--theme_light);
     /* color: white; */
 }
+.workingStatus{
+    font-size: 25px;
+}
