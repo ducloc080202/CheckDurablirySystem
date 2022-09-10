@@ -117,7 +117,7 @@ ion-icon{
     .header{
         position: fixed;
         top: 0;
-        width: 101vw;
+        width: 101%;
         z-index: 1;
     }
     .content{
@@ -143,7 +143,12 @@ ion-icon{
         display: none;
         font-size: 1.5rem;
     }
-    .header>ion-icon{
+    ion-icon{
+        padding: 0;
+        margin:12px 0 0 0;
+    }
+    #signout{
+        margin: 0;
         padding: 0;
     }
 
