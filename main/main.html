@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/lib/grid_system.css">
+    <!-- <link rel="stylesheet" href="/assets/lib/theme.css"> -->
+    <link rel="stylesheet" href="/main/main_style.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="row header">
+            <div id="signout" class="side_bar__block" onclick="location.href='/index.html';">
+                <i class="ti-home"></i>
+            </div>
+            <h1 id="headerStatus">Hệ thống kiểm tra độ bền sản phẩm</h1>
+        </div>
+        <div class="row content">
+            <div class="side_bar col p-3 t-4 m-0">
+
+                <div class="side_bar__block" onclick=status()>
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    Trạng thái hoạt động
+                </div>
+                <div class="side_bar__block" onclick=setting()>
+                    <ion-icon name="settings-outline"></ion-icon>
+                    Cài đặt và thông số
+                </div>
+                <div class="side_bar__block" onclick=report()>
+                    <ion-icon name="bar-chart-outline"></ion-icon>
+                    Báo cáo
+                </div>
+                <div id="signout" class="side_bar__block" onclick="location.href='/index.html';">
+                    <ion-icon name="home-outline"></ion-icon>
+                    Đăng xuất
+                </div>
+            </div>
+            <div id="root" class="main_content col p-9 t-8 m-12">
+
+            </div>
+        </div>
+        <div class="row phone_side_bar">
+            <div class="side_bar__block" onclick=status()>
+                <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <div class="side_bar__block" onclick=setting()>
+                <ion-icon name="settings-outline"></ion-icon>
+            </div>
+            <div class="side_bar__block" onclick=report()>
+                <ion-icon name="bar-chart-outline"></ion-icon>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/main/main_script.js"></script>
+</body>
+
+</html>

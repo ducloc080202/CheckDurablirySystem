@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid limegreen !important; */
+}
+:root{
+    --theme:#123478;
+    --theme_light:#ECEEFF;
+}
+html,body{overflow: hidden;}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100vh;
+}
+body{
+    height: 100vh;
+}
+ion-icon{
+    padding: 0 8px 0 8px;
+}
+.grid{
+    height: 100vh;
+}
+.header{
+    background-color: var(--theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+
+}
+.header>h1,ion-icon{
+
+    padding-left: 40px;
+    font-size: 2rem;
+    color: white;
+    vertical-align: middle;
+}
+
+.content{
+   
+    height: 90%;
+    font-size: 16px;
+}
+.side_bar__block:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.2)
+}
+.side_bar__block>p,#signout{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-left: 10px;
+    line-height: 48px;
+    
+}
+#signout{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.main_content{
+    background-color:white;
+
+}
+.side_bar{
+    border-right: 1px rgb(161, 161, 161) solid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* height: 100%; */
+}
+
+
+
+@media (min-width: 740px) {
+.side_bar__block{
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 60px;
+    margin: 4px 0;
+    border-radius: 10px;
+    height: 60px;
+    background-color: var(--theme);
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
+
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px, rgba(0, 0, 0, 0.22) 0px 5px 4px; */
+    margin: 24px 8px 0 16px;
+}
+.header>#signout{
+    display: none;
+}
+}
+
+.phone_side_bar{
+    width: 101%;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    line-height: 100px;
+    display: none;  
+    justify-content: space-around;
+}
+
+/* phone */
+@media (max-width: 739px) {
+    html,body{overflow:visible;}
+    .phone_side_bar{
+        overflow: hidden;
+        
+        display: block;  
+        display: flex;
+        background-color: var(--theme);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        width: 101vw;
+    }
+    .side_bar{
+        display: none;  
+    }
+
+    .side_bar__block{
+        
+        cursor: pointer;
+        width: 33.33333%;
+        padding: 0;
+        color: white;
+        height: 60px;
+        text-align: center;
+    }
+    .header>h1{
+        display: none;
+        font-size: 1.5rem;
+    }
+    .header>ion-icon{
+        padding: 0;
+    }
+
+}
+/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .content{
+        font-size: 10px;
+    }
+} */
+
+.main_content>h1{
+   
+    font-weight: 600;
+    line-height: 100px;
+    width: 90%;
+    text-align: center;
+    margin: 4px auto;
+    border-radius: 10px;
+    height: 100px;
+    background-color: var(--theme);
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
+    margin: 24px 8px 0 16px;
+}
+.content_block{
+    margin: 0;
+    border-radius: 10px;
+    height: 470px;
+    background-color: var(--theme);
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
+    margin: 24px 8px 0 16px;
+}
+.content_block>h2{
+    text-align: center;
+    margin: 36px;
+    font-size: 30px;
+}
+.content_block>p{
+    font-size: 20px;
+    margin: 24px 0 0 24px;
+}
+#send{
+    width: 300px;
+}
+input {
+	background-color: #eee;
+	border-radius: 4px;
+    border: none;
+	padding: 12px 15px;
+	margin: 24px 0;
+	width: 100%;
+}
+#form1{
+    display: flex;
+    flex-direction: column;
+}
+#form1>button{
+    color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    border: none;
+	font-size: 16px;
+	font-weight: bold;
+    margin:  auto;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	/* transition: transform 80ms ease-in; */
+}
+#form1>button:hover{
+    background-color: var(--theme_light);
+    /* color: white; */
+}
