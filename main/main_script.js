@@ -21,14 +21,14 @@ let setting=()=>{
     document.getElementById("headerStatus").innerText='Cài đặt và thông số';
     let html=`             <div class="row">
     <form id="form1"
-    class="content_block col p-5 t-5 m-12" action="https://formsubmit.co/226434e04ecfaef8414ffd32d50e9f01" method="POST">
+    class="content_block col p-5 t-5 m-11" action="https://formsubmit.co/226434e04ecfaef8414ffd32d50e9f01" method="POST">
    <h2>Cài đặt thông số </h2>
    <input class="input_field" type="number" name="push" placeholder="Số lần nhấn"> 
    <input class="input_field" type="number" name="pressure" placeholder="Lực nén"> 
    <input class="input_field" type="number" name="time" placeholder="Thời gian giữ"> 
    <button type="submit">thiết lập</button>
 </form>
-    <div class="content_block col p-5 t-5 m-12">
+    <div class="content_block col p-5 t-5 m-11">
         <h2>Thông số hoạt động</h2>
         <p id="press">Số lần đã nhấn:</p>
         <p id="pressure">Lực nén hiện tại:</p>
