@@ -20,6 +20,12 @@ let status=()=>{
 let setting=()=>{
     document.getElementById("headerStatus").innerText='Cài đặt và thông số';
     let html=`             <div class="row">
+    <div class="content_block col p-5 t-5 m-11">
+        <h2>Thông số hoạt động</h2>
+        <p id="press">Số lần đã nhấn:</p>
+        <p id="pressure">Lực nén hiện tại:</p>
+        <p id="time">Thời gian đã giữ:</p>
+    </div>
     <form id="form1"
     class="content_block col p-5 t-5 m-11" action="https://formsubmit.co/226434e04ecfaef8414ffd32d50e9f01" method="POST">
    <h2>Cài đặt thông số </h2>
@@ -28,12 +34,6 @@ let setting=()=>{
    <input class="input_field" type="number" name="time" placeholder="Thời gian giữ"> 
    <button type="submit">thiết lập</button>
 </form>
-    <div class="content_block col p-5 t-5 m-11">
-        <h2>Thông số hoạt động</h2>
-        <p id="press">Số lần đã nhấn:</p>
-        <p id="pressure">Lực nén hiện tại:</p>
-        <p id="time">Thời gian đã giữ:</p>
-    </div>
 </div>
 <div class="row">
    
