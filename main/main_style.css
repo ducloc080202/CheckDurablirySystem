@@ -86,8 +86,6 @@ ion-icon{
     height: 60px;
     background-color: var(--theme);
 	box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
-
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px, rgba(0, 0, 0, 0.22) 0px 5px 4px; */
     margin: 24px 8px 0 16px;
 }
 .header>#signout{
